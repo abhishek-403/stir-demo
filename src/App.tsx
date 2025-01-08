@@ -1,8 +1,8 @@
 import Home from "./home/Home";
-export const SERVER_BASE_URL = "http://localhost:3000";
+export const SERVER_BASE_URL = import.meta.env.VITE_PUBLIC_SERVER_BASE_URL!;
 function App() {
   return (
-    <div className="bg-gradient-to-b from-neutral-950 to-indigo-950  p-8 bg-black w-full h-full min-h-screen">
+    <div className="bg-gradient-to-bl p-8 from-dark-90 via-neutral-100 to-dark-90  w-full h-full min-h-screen">
       <Home />
     </div>
   );
